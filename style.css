@@ -1,0 +1,194 @@
+*{
+  margin : 0px;
+  padding: 0px;
+}
+.title{
+  color: rgb(255, 0, 0);
+  padding: 30px;
+  background-image: url('/dishImg/main.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.title span{
+  background-color: rgba(255, 255, 255, 0.42);
+  margin-left: 20vw;
+  padding : 10px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  border-radius: 30px;
+  font-size: 50px;
+}
+.intro{
+  width: 550px;
+  font-size: 25px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.593); */
+  padding: 20px;
+  border-radius: 30px;
+}
+body{
+  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.386);
+}
+.heavy{
+  font-weight: 300;
+  font-size:x-large;
+}
+
+.favourites h2,.menuHeader{
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.foodItems{
+  margin: 50px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.542);
+  padding : 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemPicture img{
+  width : 22vw;
+  height : 30vh;
+}
+
+.itemDetails{
+  text-align: center;
+}
+.itemName{
+  font-size: 30px;
+}
+
+.itemType,.rating{
+  font-size: 19px;
+}
+.prize{
+  font-size: 25px;
+}
+.item{
+  background-color: rgba(255, 255, 255, 0.433);
+  padding: 10px;
+  width: 22vw;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+.actualMenu{
+  display: flex;
+}
+.texture{
+  background-image: url('dishImg/menu-bg.jpg');
+  width: 30vw;
+  padding: 3vw;
+}
+
+.texture button{
+  background-color: rgba(255, 0, 0, 0.586);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 25px;
+  font-size: 28px;
+}
+
+.menuBtn:hover{
+  cursor: pointer;
+}
+
+.menuBtn{
+  margin: 1vw;
+  border: none;
+  margin-left: 9vw;
+  background: none;
+  font-size: 20px;
+  /* border: none; */
+}
+
+.flexItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 3vw;
+}
+.subMenu h4{
+  text-align: center;
+  font-size: 40px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.menuItems{
+  background-color: rgba(255, 255, 22, 0.685);
+  border-radius: 20px;
+  width: 750px;
+  margin-left: 30px;
+  padding-left: 3vw;
+}
+
+.menuImg{
+  width: 18vw;
+}
+
+.slider{
+  height : 250px;
+  margin : auto;
+  position : relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 8);
+  animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 4));
+  }
+}
+
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective:100px;
+}
+
+
+.slide img{
+  width: 100%;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+
+.slide img:hover{
+transform: translateZ(20px);
+}
+
+.foot{
+  margin: 15px;
+  font-size: large;
+}
+marquee{
+border-radius: 5px;
+}
